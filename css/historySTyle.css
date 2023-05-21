@@ -1,0 +1,80 @@
+/* loading Screen */
+.img-spinner  {
+    background-color: lightgray;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:1000px;
+    z-index:9999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 1s ease;
+  }
+  .img-size {
+    width:50%;
+  }
+  @keyframes spinning {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg)}
+    
+  }
+  .spin {
+    animation-name:spinning;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @media only screen and (min-width: 768px) {
+    .img-size {
+        width:25%;
+    }
+    .img-spinner {
+        margin-top: -85px;
+    }
+  }
+  
+  @media only screen and (min-width:992px) {
+    .img-size {
+        width:15%;
+    }
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+}
+#about{
+    width: 70%;
+    height: auto;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: black;
+   
+}
+#mission, #vision, #goals{
+    width: 70%;
+    padding: 20px;
+    border: 2px solid black;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    color: black;
+}
+#history{
+    font-size: 25px;
+    
+}
+#getTtl{
+    font-size: 30px;
+}
+#aboutTtl{
+    margin-top: -30px;
+    font-size: 25px;
+
+}
+
