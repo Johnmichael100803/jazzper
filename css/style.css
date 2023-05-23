@@ -1,4 +1,7 @@
 /* loading Screen */
+
+
+
 .img-spinner  {
   background-color: lightgray;
   position: fixed;
@@ -40,6 +43,8 @@
       width:15%;
   }
 }
+
+
 main{
     margin-top: 50px;
    padding: 0;
@@ -82,7 +87,7 @@ h1{
         }
 
 .card-text{
-    text-align: justify;
+    text-align:inherit;
 }
 .card{
     height: 550px;
